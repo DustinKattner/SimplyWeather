@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Simply_Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30N-t9-ggS">
+                                <rect key="frame" x="149" y="84" width="116" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Je6-ne-j0S">
+                                <rect key="frame" x="174" y="125" width="66" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Condition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFV-ep-4gQ">
+                                <rect key="frame" x="164.5" y="384" width="85" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="72" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NvR-m1-Le5">
+                                <rect key="frame" x="164" y="438" width="86" height="90"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="75"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01d" translatesAutoresizingMaskIntoConstraints="NO" id="D7b-Gd-ZBv">
+                                <rect key="frame" x="107" y="179" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="4ka-fb-GHp"/>
+                                    <constraint firstAttribute="height" constant="200" id="nug-w9-wHY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="℉" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGL-rc-eb5">
+                                <rect key="frame" x="258" y="438" width="30" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="Je6-ne-j0S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Tb-F2-vRU"/>
+                            <constraint firstItem="30N-t9-ggS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="3KI-qZ-nPx"/>
+                            <constraint firstItem="fFV-ep-4gQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QvB-eV-IDG"/>
+                            <constraint firstItem="30N-t9-ggS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TCG-O0-WNO"/>
+                            <constraint firstItem="D7b-Gd-ZBv" firstAttribute="top" secondItem="Je6-ne-j0S" secondAttribute="bottom" constant="30" id="WgB-wN-Fbc"/>
+                            <constraint firstItem="NvR-m1-Le5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X15-kc-Acd"/>
+                            <constraint firstItem="fFV-ep-4gQ" firstAttribute="top" secondItem="D7b-Gd-ZBv" secondAttribute="bottom" constant="5" id="XYY-IO-jhj"/>
+                            <constraint firstItem="Je6-ne-j0S" firstAttribute="top" secondItem="30N-t9-ggS" secondAttribute="bottom" constant="5" id="gyv-5N-dKq"/>
+                            <constraint firstItem="NvR-m1-Le5" firstAttribute="top" secondItem="dGL-rc-eb5" secondAttribute="bottom" constant="-36" id="mXV-39-R3l"/>
+                            <constraint firstItem="D7b-Gd-ZBv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mk3-I1-cc7"/>
+                            <constraint firstItem="NvR-m1-Le5" firstAttribute="top" secondItem="fFV-ep-4gQ" secondAttribute="bottom" constant="30" id="q4Y-xJ-9jw"/>
+                            <constraint firstItem="dGL-rc-eb5" firstAttribute="leading" secondItem="NvR-m1-Le5" secondAttribute="trailing" constant="8" symbolic="YES" id="xPx-Wc-fwY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="8bC-Xf-vdC" id="EfL-1m-KP0"/>
+                        <outlet property="conditionImg" destination="D7b-Gd-ZBv" id="APr-Dg-RC4"/>
+                        <outlet property="conditionLabel" destination="fFV-ep-4gQ" id="6s6-76-KHM"/>
+                        <outlet property="dayLabel" destination="Je6-ne-j0S" id="DhH-bt-dJH"/>
+                        <outlet property="locationLabel" destination="30N-t9-ggS" id="Hux-sw-SMk"/>
+                        <outlet property="tempLabel" destination="NvR-m1-Le5" id="Zv4-gH-XxY"/>
+                        <outlet property="tempUnitsLabel" destination="dGL-rc-eb5" id="zM3-U6-aZT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-14" y="117"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="01d" width="512" height="512"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
